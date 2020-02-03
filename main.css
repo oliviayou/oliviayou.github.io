@@ -1,0 +1,48 @@
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+body {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color:#FFFFFF;
+    font-family: arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-top: 5px;
+  }
+
+  h3 {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+
+  p{
+      font-size: 18px;
+  }
+
+  p.button {
+      margin-left:auto;
+      margin-right:auto;
+      color: #554C78;
+      border: 6px solid #554C78
+  }
+  
+  a:link, a:visited {
+    background-color: #554C78;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: #C9C2E3
+  }
