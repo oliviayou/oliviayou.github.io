@@ -3,33 +3,28 @@
     <head>
         <title> Olivia You </title>
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
     </head>
     <body BGCOLOR="FFFFFF">
-
-        <div> 
+        <div class="navbarContainer"> 
             <a href="#top">Olivia You</a>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </div>
-        
-
-        <!--Home Section-->
-        <div style="background-color:#C9C2E3;color:black;padding:20px;">
-            <h1 id="home">
+        <div class="home">
+            <h1>
                 Hello World!
             </h1>
             <h2> 
-                My name is <b>Olivia You</b>, a Management Engineering student at the University of Waterloo.
-                I'm currently working at TD Bank as a <b>DevOps Engineer</b> and previously at TribalScale as a Agile Test Engineer.<br> 
+                My name is <strong>Olivia You</strong>, a Management Engineering student at the University of Waterloo.
+                I'm currently working at TD Bank as a <strong>DevOps Engineer</strong> and previously at TribalScale as a Agile Test Engineer.<br> 
                 My goal is to leverage technology to build elegant and efficient tools.
             </h2>
-            <a href="#about">Learn More</a>
+            <a class="button" href="#about">Learn More</a>
         </div>
-
-        <!--About Section-->
         <hr>
-        <div>
+        <div class="about">
             <h3 id="about">About</h3>
             <p> 
                 I’m studying Management Engineering the University of Waterloo where 
@@ -55,57 +50,53 @@
             <img src="images/tribalscale-dinner.jpg" alt="TribalScale team dinner" style="width:215px;">
             <img src="images/htn-2019.jpg" alt="Hack The North 2019 team" style="width:215px;">
         </div>
-
-        <!--Experience Section-->
         <hr>
-        
+        <div class="experience">
             <h3 id="experience">Experience</h3>
-        <div>
-            <div class="experiences">
-                <img src="images/td-icon.jpg" alt="TD icon" style="float:right;width:80px;">
-                <h2>DevOps Engineer</h2>
-                <p>TD</p>
-                <p>Building dashboards that display meaningful, real-time data in Confluence.</p>
-            </div>
 
-            <div class="experiences">
-            <img src="images/UW-icon.jpg" alt="University of Waterloo icon" style="float:right;width:80px;">
-            <h2>Engineering Tutor</h2>
-            <p>University of Waterloo</p>
-            <p>Facilitating evening tutoring sessions and speaking on engineering Q&A panels to share my experience transitioning to university.</p>
-            </div>
+            <div>
+                <div class="experiences">
+                    <img src="images/td-icon.jpg" alt="TD icon" style="float:right;width:80px;">
+                    <h2>DevOps Engineer</h2>
+                    <p>TD</p>
+                    <p>Building dashboards that display meaningful, real-time data in Confluence.</p>
+                </div>
 
-            <div class="experiences">    
-                <img src="images/tribalscale-icon.gif" alt="TribalScale icon" style="float:right;width:80px;">
-                <h2>Agile Software Test Engineer</h2>
-                <p>TribalScale Inc.</p>
-                <p>Leveraging automation development and integration testing to release the best in class products.</p>
+                <div class="experiences">
+                <img src="images/UW-icon.jpg" alt="University of Waterloo icon" style="float:right;width:80px;">
+                <h2>Engineering Tutor</h2>
+                <p>University of Waterloo</p>
+                <p>Facilitating evening tutoring sessions and speaking on engineering Q&A panels to share my experience transitioning to university.</p>
+                </div>
+
+                <div class="experiences">    
+                    <img src="images/tribalscale-icon.gif" alt="TribalScale icon" style="float:right;width:80px;">
+                    <h2>Agile Software Test Engineer</h2>
+                    <p>TribalScale Inc.</p>
+                    <p>Leveraging automation development and integration testing to release the best in class products.</p>
+                </div>
             </div>
         </div>
-
-        <!--Contact Section-->
         <hr>
-        <div>
+        <div class="contact">
             <h3 id="contact">Contact</h3>
                 <p>Please send me an email here if you have any comments, inquiries, or just want to chat over coffee.</p>
             <hr>
         </div>
-
-        <div style="background-color:#C9C2E3;color:black;padding:20px;">
-            <a href="mailto:oyou@uwaterloo.ca?Subject=Re:%20Your%20Personal%20Portfolio" title="Send me an email">
-                <img src="images/mail-hover.png" alt="Email" style="width:32px;height:32px;border:0;">
+        <div class="endbar">
+            <a class="icon" href="mailto:oyou@uwaterloo.ca?Subject=Re:%20Your%20Personal%20Portfolio" title="Send me an email">
+                <img src="images/mail-hover.png" alt="Email" style="width:32px;">
             </a>
-            <a href="https://www.linkedin.com/in/youolivia/" title="Visit my LinkedIn"> 
-                <img src="images/linkedin-hover.png" alt="LinkedIn" style="width:32px;height:32px;border:0;">
+            <a class="icon" href="https://www.linkedin.com/in/youolivia/" title="Visit my LinkedIn"> 
+                <img src="images/linkedin-hover.png" alt="LinkedIn" style="width:32px;">
             </a>
-            <a href="https://github.com/oliviayou" title="View my projects on GitHub"> 
-                <img src="images/github-hover.png" alt="GitHub" style="width:32px;height:32px;border:0;">
+            <a class="icon" href="https://github.com/oliviayou" title="View my projects on GitHub"> 
+                <img src="images/github-hover.png" alt="GitHub" style="width:32px;">
             </a>
-            <a href="https://www.facebook.com/itsoliviayou" title="Message me on Facebook"> 
-                <img src="images/facebook-hover.png" alt="Facebook" style="width:32px;height:32px;border:0;">
+            <a hclass="icon" ref="https://www.facebook.com/itsoliviayou" title="Message me on Facebook"> 
+                <img src="images/facebook-hover.png" alt="Facebook" style="width:32px;">
             </a>
-            <p style="text-align: center;">Designed & Developed with ☕️ by Olivia You</p>
-        </div>
-        
+            <p style="text-align: center; color:white">Designed & Developed with ☕️ by Olivia You</p>
+        </div>  
     </body> 
 </html>
