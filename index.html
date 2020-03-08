@@ -4,10 +4,15 @@
         <title> Olivia You </title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" href="images/my-animoji.png" style="width: 10px; height: 2px;">
     </head>
     <body BGCOLOR="FFFFFF">
-        <div class="navbarContainer"> 
-            <a href="#top">Olivia You</a>
+        <div class="navbar"> 
+            <div id="home-icon">
+                <a href="#top"> <img src="images/my-animoji.png" alt="Olivia's Animoji" style="width: 60px; margin-left: 0px;"></a>
+            </div>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
@@ -16,75 +21,83 @@
             <h1>
                 Hello World!
             </h1>
-            <h2> 
+            <h3> 
                 My name is <strong>Olivia You</strong>, a Management Engineering student at the University of Waterloo.
-                I'm currently working at TD Bank as a <strong>DevOps Engineer</strong> and previously at TribalScale as a Agile Test Engineer.<br> 
-                My goal is to leverage technology to build elegant and efficient tools.
-            </h2>
-            <a class="button" href="#about">Learn More</a>
+                I'm currently working at TD Bank as a <strong>DevOps Engineer</strong> and previously at TribalScale as a Agile Test Engineer.
+                <br><br>My goal is to leverage technology to build elegant and efficient tools.
+                <br><br><a class="button" href="#about">Learn More ↓</a>
+            </h3>
+            
         </div>
-        <hr>
-        <div class="about">
-            <h3 id="about">About</h3>
+        <div class="section" id="about">
+            <h2 id="about">
+                Here's a Little About Me
+            </h2>
             <p> 
-                I’m studying Management Engineering the University of Waterloo where 
-                I’m bringing together the technological problem-solving ability of 
-                engineering with operational decision making skills in order to optimize 
-                the performance of complex systems.
+                I'm a sophomore studing Management Engineering where I’m bringing together the technological problem-solving ability of 
+                engineering with operational decision making skills in order to optimize the performance of complex systems.
             </p>
             <p> 
-                In the past, I’ve interned at TribalScale as an Agile Test Engineer 
-                and I’m currently working at TD Bank as a DevOps Engineer.
+                In the past, I’ve interned at TribalScale as an Agile Test Engineer and I’m currently working at TD Bank as a DevOps Engineer.
             </p>
             <p> 
-                Outside of school, I’m an avid hackathon attender and organizer, 
-                having organized EngHack 2018. In the evenings, I mentor first year 
+                Outside of school, I’m an avid hackathon attender and organizer, having organized EngHack 2018. In the evenings, I mentor first year 
                 engineering students and facilitate math tutoring sessions.
             </p>
             <p> 
-                I’m seeking product development internship opportunities for Fall 2020 -- Check out my resume 
-                or send me a message on LinkedIn if you’d like to chat!
+                I’m seeking software engineering internship opportunities for Fall 2020 -- Check out my resume or send me a message on LinkedIn if you’d like to chat!
             </p>
-
-            <img src="images/class-photo-1a.jpg" alt="Management engineering class" style="width:215px;">
-            <img src="images/tribalscale-dinner.jpg" alt="TribalScale team dinner" style="width:215px;">
-            <img src="images/htn-2019.jpg" alt="Hack The North 2019 team" style="width:215px;">
+            <div class="row">
+                <div id="picture-1" class="column">
+                    <img src="images/class-photo-1a.jpg" alt="Management engineering class" style="width:100%; border-radius: 10%;">
+                </div>
+                <div id="picture-2" class="column">
+                    <img src="images/tribalscale-dinner.jpg" alt="TribalScale team dinner" style="width:100%; border-radius: 10%;">
+                </div>
+                <div id="picture-2" class="column">
+                    <img src="images/htn-2019.jpg" alt="Hack The North 2019 team" style="width:100%; border-radius: 10%;">
+                </div>
+            </div>
         </div>
-        <hr>
-        <div class="experience">
-            <h3 id="experience">Experience</h3>
-
+        <div class="section" id="experience">
+            <h2 id="experience">
+                Work Experience
+            </h2>
             <div>
                 <div class="experiences">
-                    <img src="images/td-icon.jpg" alt="TD icon" style="float:right;width:80px;">
-                    <h2>DevOps Engineer</h2>
+                    <div class="company-logo">
+                        <img src="images/td-icon.jpg" alt="TD icon">
+                    </div>
+                    <h3>DevOps Engineer</h3>
                     <p>TD</p>
                     <p>Building dashboards that display meaningful, real-time data in Confluence.</p>
                 </div>
-
                 <div class="experiences">
-                <img src="images/UW-icon.jpg" alt="University of Waterloo icon" style="float:right;width:80px;">
-                <h2>Engineering Tutor</h2>
+                    <div class="company-logo">
+                        <img src="images/UW-icon.jpg" alt="University of Waterloo icon">
+                    </div>
+                <h3>Engineering Tutor</h3>
                 <p>University of Waterloo</p>
                 <p>Facilitating evening tutoring sessions and speaking on engineering Q&A panels to share my experience transitioning to university.</p>
                 </div>
-
-                <div class="experiences">    
-                    <img src="images/tribalscale-icon.gif" alt="TribalScale icon" style="float:right;width:80px;">
-                    <h2>Agile Software Test Engineer</h2>
+                <div class="experiences">  
+                    <div class="company-logo"> 
+                        <img src="images/tribalscale-icon.gif" alt="TribalScale icon">
+                    </div> 
+                    <h3>Agile Software Test Engineer</h3>
                     <p>TribalScale Inc.</p>
                     <p>Leveraging automation development and integration testing to release the best in class products.</p>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="contact">
-            <h3 id="contact">Contact</h3>
-                <p>Please send me an email here if you have any comments, inquiries, or just want to chat over coffee.</p>
-            <hr>
+        <div class="section" id="about">
+            <h2 id="contact">
+                Contact   
+            </h2>
+                <p>Please send me an email <a href="mailto:oyou@uwaterloo.ca?Subject=Re:%20Your%20Personal%20Website">here</a> if you have any comments, inquiries, or just want to chat over coffee.</p>
         </div>
         <div class="endbar">
-            <a class="icon" href="mailto:oyou@uwaterloo.ca?Subject=Re:%20Your%20Personal%20Portfolio" title="Send me an email">
+            <a class="icon" href="mailto:oyou@uwaterloo.ca?Subject=Re:%20Your%20Personal%20Website" title="Send me an email">
                 <img src="images/mail-hover.png" alt="Email" style="width:32px;">
             </a>
             <a class="icon" href="https://www.linkedin.com/in/youolivia/" title="Visit my LinkedIn"> 
@@ -96,7 +109,7 @@
             <a hclass="icon" ref="https://www.facebook.com/itsoliviayou" title="Message me on Facebook"> 
                 <img src="images/facebook-hover.png" alt="Facebook" style="width:32px;">
             </a>
-            <p style="text-align: center; color:white">Designed & Developed with ☕️ by Olivia You</p>
+            <p style="text-align: center; color:white">Built from Scratch by Olivia You ✨</p>
         </div>  
     </body> 
 </html>
