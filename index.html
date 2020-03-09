@@ -2,60 +2,70 @@
 <html lang="en-US">
     <head>
         <title> Olivia You </title>
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="icon" type="image/png" href="images/my-animoji.png" style="width: 10px; height: 2px;">
     </head>
     <body BGCOLOR="FFFFFF">
-        <div class="navbar"> 
-            <div id="home-icon">
-                <a href="#top"> <img src="images/my-animoji.png" alt="Olivia's Animoji" style="width: 60px; margin-left: 0px;"></a>
-            </div>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="home">
+        <div class="nav-bar-block">
+            <nav>
+                <ul>
+                    <li><a href="#top"><img src="images/my-animoji.png" alt="Home" id="home-icon"></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div> 
+        <div class="section" id="home-section">
             <h1>
                 Hello World!
             </h1>
             <h3> 
-                My name is <strong>Olivia You</strong>, a Management Engineering student at the University of Waterloo.
-                I'm currently working at TD Bank as a <strong>DevOps Engineer</strong> and previously at TribalScale as a Agile Test Engineer.
-                <br><br>My goal is to leverage technology to build elegant and efficient tools.
+                My name is <strong>Olivia You</strong>, a <strong>Management Engineering</strong> student at the University of Waterloo.
+                I'm currently working at TD as a <strong>DevOps Engineer</strong> and previously at TribalScale as a Agile Test Engineer.
+                <br><br>My goal is to leverage technology to build efficient tools and seamless user experiences.
                 <br><br><a class="button" href="#about">Learn More ↓</a>
             </h3>
-            
         </div>
         <div class="section" id="about">
             <h2 id="about">
                 Here's a Little About Me
             </h2>
             <p> 
-                I'm a sophomore studing Management Engineering where I’m bringing together the technological problem-solving ability of 
-                engineering with operational decision making skills in order to optimize the performance of complex systems.
+                I'm a sophomore studying Management Engineering — I’m constantly improving my ability to bring together the technological problem-solving ability of 
+                engineering with operational decision making skills in order to optimize the performance of all kinds of systems.
             </p>
             <p> 
-                In the past, I’ve interned at TribalScale as an Agile Test Engineer and I’m currently working at TD Bank as a DevOps Engineer.
+                To apply these learnings, I’ve worked at TribalScale as an Agile Software Test Engineer and I’m currently working at TD Bank as a DevOps Engineer,
+                where I've thrived in the Agile culture. I always look forward to attending lunch & learns and retrospectives amongst all the other Agile ceremonies!
             </p>
             <p> 
-                Outside of school, I’m an avid hackathon attender and organizer, having organized EngHack 2018. In the evenings, I mentor first year 
+                Aside from school and work, I’m an avid hackathon attender and organizer, having organized EngHack 2018. In the evenings, I mentor first year 
                 engineering students and facilitate math tutoring sessions.
             </p>
             <p> 
-                I’m seeking software engineering internship opportunities for Fall 2020 -- Check out my resume or send me a message on LinkedIn if you’d like to chat!
+                I’m seeking internship opportunities for Fall and Summer 2020 — send me an <a href="mailto:oyou@uwaterloo.ca?Subject=Re:%20Your%20Personal%20Website">email</a> or message if you’d like to chat!
             </p>
             <div class="row">
                 <div id="picture-1" class="column">
-                    <img src="images/class-photo-1a.jpg" alt="Management engineering class" style="width:100%; border-radius: 10%;">
+                    <img src="images/class-photo-1a.jpg" alt="Management engineering class" class="picture">
+                    <div class="picture-hover">
+                        <div class="text">Management Engineering class photo after finishing our first term classes, 2018</div>
+                    </div>
                 </div>
                 <div id="picture-2" class="column">
-                    <img src="images/tribalscale-dinner.jpg" alt="TribalScale team dinner" style="width:100%; border-radius: 10%;">
+                    <img src="images/tribalscale-dinner.jpg" alt="TribalScale team dinner" class="picture">
+                    <div class="picture-hover">
+                        <div class="text">A celebratory team dinner at the Rec Room after the completion of a project, 2019</div>
+                    </div>
                 </div>
-                <div id="picture-2" class="column">
-                    <img src="images/htn-2019.jpg" alt="Hack The North 2019 team" style="width:100%; border-radius: 10%;">
+                <div id="picture-3" class="column">
+                    <img src="images/htn-2019.jpg" alt="Hack The North 2019 team" class="picture">
+                    <div class="picture-hover">
+                        <div class="text">Team Demo at Hack the North after a weekend of hacking, 2019</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,24 +78,21 @@
                     <div class="company-logo">
                         <img src="images/td-icon.jpg" alt="TD icon">
                     </div>
-                    <h3>DevOps Engineer</h3>
-                    <p>TD</p>
+                    <h3>DevOps Engineer, TD</h3>
                     <p>Building dashboards that display meaningful, real-time data in Confluence.</p>
                 </div>
                 <div class="experiences">
                     <div class="company-logo">
                         <img src="images/UW-icon.jpg" alt="University of Waterloo icon">
                     </div>
-                <h3>Engineering Tutor</h3>
-                <p>University of Waterloo</p>
-                <p>Facilitating evening tutoring sessions and speaking on engineering Q&A panels to share my experience transitioning to university.</p>
+                <h3>Engineering Tutor, University of Waterloo</h3>
+                <p>Facilitating evening tutoring sessions and speaking on Q&A panels to share my experience transitioning to university.</p>
                 </div>
                 <div class="experiences">  
                     <div class="company-logo"> 
                         <img src="images/tribalscale-icon.gif" alt="TribalScale icon">
                     </div> 
-                    <h3>Agile Software Test Engineer</h3>
-                    <p>TribalScale Inc.</p>
+                    <h3>Agile Software Test Engineer, TribalScale Inc.</h3>
                     <p>Leveraging automation development and integration testing to release the best in class products.</p>
                 </div>
             </div>
@@ -98,16 +105,16 @@
         </div>
         <div class="endbar">
             <a class="icon" href="mailto:oyou@uwaterloo.ca?Subject=Re:%20Your%20Personal%20Website" title="Send me an email">
-                <img src="images/mail-hover.png" alt="Email" style="width:32px;">
+                <img src="images/mail-hover.png" alt="Email">
             </a>
             <a class="icon" href="https://www.linkedin.com/in/youolivia/" title="Visit my LinkedIn"> 
-                <img src="images/linkedin-hover.png" alt="LinkedIn" style="width:32px;">
+                <img src="images/linkedin-hover.png" alt="LinkedIn">
             </a>
             <a class="icon" href="https://github.com/oliviayou" title="View my projects on GitHub"> 
-                <img src="images/github-hover.png" alt="GitHub" style="width:32px;">
+                <img src="images/github-hover.png" alt="GitHub">
             </a>
-            <a hclass="icon" ref="https://www.facebook.com/itsoliviayou" title="Message me on Facebook"> 
-                <img src="images/facebook-hover.png" alt="Facebook" style="width:32px;">
+            <a class="icon" ref="https://www.facebook.com/itsoliviayou" title="Message me on Facebook"> 
+                <img src="images/facebook-hover.png" alt="Facebook">
             </a>
             <p style="text-align: center; color:white">Built from Scratch by Olivia You ✨</p>
         </div>  
