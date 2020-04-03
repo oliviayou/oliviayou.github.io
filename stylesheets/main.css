@@ -1,6 +1,4 @@
-@import url("photo.css");
 @import url("button.css");
-@import url("navbar.css");
 
 html {
   scroll-behavior: smooth;
@@ -31,19 +29,21 @@ body {
 h1 {
   font-size: 54px;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 0px;
   margin-bottom: 80px;
 }
 
 h2 {
   font-size: 36px;
   font-weight: bold;
-  display: inline;
+  display: block;
+  margin-top: 80px;
 }
 
 h3 {
   font-size: 24px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 p {
@@ -74,7 +74,7 @@ mark {
   border-radius: 50px;
 }
 
-.company-logo > img{
+.company-logo > img {
   float: right;
   width: 100px;
   border-radius: 25%;
@@ -84,9 +84,5 @@ mark {
 .icon > i {
   float: center;
   width: 32px; 
-  padding: 10px; 
-}
-
-.fas fa-envelope:hover {
-  background-color: black;
+  padding: 2px; 
 }
