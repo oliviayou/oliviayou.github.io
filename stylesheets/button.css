@@ -3,7 +3,8 @@
 .nav-bar {
   background-color: #C9C2E3;
   list-style: none;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   overflow: hidden;
   width: 100%;
@@ -54,6 +55,7 @@
   }
 
   /* PHOTOS */
+  
   .row {
     display: flex;
   }

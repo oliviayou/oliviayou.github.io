@@ -1,36 +1,26 @@
-@import url("button.css");
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  padding-left: 5%;
-  padding-right: 5%;
   background-color: white;
 }
 
 @media only screen and (min-width: 768px) {
   /* for desktop */
-  html {
+  .blurb {
     padding-left: 15%;
     padding-right: 15%;
   }
 }
 
-.nav-bar{
-  padding: 0px;
-}
-
 body {
-  background-color:#FFFFFF;
   font-family: Roboto;
-  margin-left: 0px;
+  margin: 0;
 }
 
 h1 {
+  padding-bottom: 40px;
   font-size: 54px;
   font-weight: bold;
-  padding-top: 0px;
-  margin-bottom: 80px;
 }
 
 h2 {
@@ -61,6 +51,11 @@ mark {
   padding-bottom: 0.5em;
 }
 
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 #home-section {
   background-color:#ececec;
 }
@@ -86,3 +81,107 @@ mark {
   width: 32px; 
   padding: 2px; 
 }
+
+/* NAV BAR */
+
+.nav-bar {
+  background-color: #C9C2E3;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+}
+
+.nav-bar li {
+  display: inline;
+}
+
+.nav-bar a {
+  display: inline-block;
+  margin-top: -15px;
+}
+
+#home-icon {
+  width: 60px;
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  text-align: left;
+}
+
+.endbar {
+  display: inline-block;
+  margin-top: 60px;
+  text-align: center;
+  background-color:#C9C2E3;
+  width: 100%;
+}
+
+/*BUTTONS*/  
+  
+  ul > img{
+    padding: 0px;
+  }
+  
+  a:link, a:visited {
+  background-color: #C9C2E3;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: white;
+  }
+
+  /* PHOTOS */
+  
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    position: relative;
+    width:100%;
+    flex: 100%;
+    padding: 1%;
+  }
+
+  .picture {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    border-radius: 10%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .picture-hover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .column:hover .picture {
+    opacity: 0.3;
+  }
+  
+  .column:hover .picture-hover {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #C9C2E3;
+    border-radius: 30px;
+    color: black;
+    font-size: 16px;
+  }
