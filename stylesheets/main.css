@@ -25,8 +25,8 @@ body {
 }
 
 h1 {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  margin-top: 160px;
+  margin-bottom: 80px;
   font-size: 54px;
   font-weight: 600;
 }
@@ -34,7 +34,7 @@ h1 {
 h2 {
   font-size: 36px;
   display: block;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 h3 {
@@ -95,14 +95,21 @@ mark {
   border-color: #ececec;
 }
 
-.icon > i {
+/* icon styling */
+
+i {
   float: center;
-  width: 32px; 
-  padding: 2px; 
+  padding: 8px; 
+  font-size: 32px;
+  color: #7f75a6;
+}
+  
+i:hover, i:active {
+    color: #554C78;
 }
 
 
-/*BUTTONS*/  
+/* buttons */  
   
   ul > img{
     padding: 0px;
@@ -116,51 +123,10 @@ mark {
   }
   
   a:hover, a:active {
-    background-color: #C9C2E3
+    background-color: #C9C2E3;
   }
 
-  /* NAV BAR */
-
-.nav-bar {
-  background-color: #554C78;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  overflow: hidden;
-  width: 100%;
-  height: 80px;
-  color: white;
-}
-
-.nav-bar li {
-  display: inline;
-}
-
-.nav-bar a {
-  display: inline-block;
-  color: white;
-  margin-top: -15px;
-}
-
-#home-icon {
-  width: 60px;
-  position: relative;
-  top: 25px;
-  display: inline-block;
-  text-align: left;
-}
-
-.endbar {
-  display: inline-block;
-  margin-top: 60px;
-  text-align: center;
-  background-color:#C9C2E3;
-  width: 100%;
-  padding: 1%;
-}
-
-  /* PHOTOS */
+  /* photos */
   
   .row {
     display: flex;
@@ -207,3 +173,52 @@ mark {
     color: black;
     font-size: 16px;
   }
+
+/* navigation bar */
+
+.nav-bar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #554C78;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  color: white;
+}
+
+:target{
+  padding-top: 80px; /* = to height of navbar */
+  margin-top: -80px;
+}
+
+.nav-bar li {
+  display: inline;
+}
+
+.nav-bar a {
+  display: inline-block;
+  color: white;
+  margin-top: -15px;
+}
+
+#home-icon {
+  width: 60px;
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  text-align: left;
+}
+
+.endbar {
+  display: inline-block;
+  margin-top: 60px;
+  text-align: center;
+  background-color:#C9C2E3;
+  width: 100%;
+  padding: 1%;
+}
