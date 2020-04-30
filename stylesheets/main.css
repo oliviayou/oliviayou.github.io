@@ -1,4 +1,3 @@
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -6,19 +5,18 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 .blurb {
-  padding: 0% 5%;
+  padding: 0% 6%;
 }
 
 @media only screen and (min-width: 768px) {
-  /* for bigger window */
   .blurb {
-    padding: 0 5%;
+    padding: 0 10%;
   }
-}
-
-body {
-  margin: 0;
 }
 
 h1 {
@@ -36,15 +34,13 @@ h2 {
 
 h3 {
   font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-weight: normal;
 }
 
 h4 {
   font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 p {
@@ -71,25 +67,6 @@ mark {
   background-color:#E0DBF1;
 }
 
-.experiences {
-  background-color: WhiteSmoke;
-  border-style: solid;
-  border-color: #ececec;
-  border-radius: 50px;
-  margin-top: 30px;
-  padding: 20px;
-}
-
-.company-logo {
-  float: right;
-  width: 100px;
-  border-radius: 25%;
-  padding: 0px;
-  border-style: solid;
-  border-width: medium;
-  border-color: #ececec;
-}
-
 /* icon styling */
 
 i {
@@ -105,9 +82,13 @@ i:hover, i:active {
 
 
 /* buttons */  
-  
-ul > img{
-  padding: 0px;
+
+#home-icon {
+  width: 60px;
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  text-align: left;
 }
 
 a:link, a:visited {
@@ -117,7 +98,8 @@ text-decoration: none;
 display: inline-block;
 }
 
-a:hover, a:active {
+a:hover, a:active,
+#home-icon:hover, #home-icon:active {
   background-color: #C9C2E3;
 }
 
@@ -126,13 +108,13 @@ a:hover, a:active {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 25px 25px;
+  padding: 20px 20px;
 }
 
 .column {
   flex: 39%;
   max-width: 39%;
-  padding: 25px 25px;
+  padding: 20px 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -144,19 +126,22 @@ a:hover, a:active {
   border-style: solid;
   border-width: 2px;
   border-color: #C9C2E3;
-  box-shadow: 20px 20px #C9C2E3;
+  box-shadow: 25px 25px #C9C2E3;
   vertical-align: middle;
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .column {
-    flex: 150%;
-    max-width: 150%;
+    flex: 60%;
+    max-width: 60%;
   }
+}
 
-  .column img {
-    box-shadow: 25px 25px #C9C2E3;
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
   
@@ -181,6 +166,28 @@ a:hover, a:active {
 
 .column:hover .picture-hover {
   opacity: 0.8;
+}
+
+/* experiences */
+
+.experiences {
+  background-color: WhiteSmoke;
+  border-style: solid;
+  border-color: #ececec;
+  box-shadow: 25px 25px #ececec;
+  border-radius: 50px;
+  margin: 60px 20px;
+  padding: 20px;
+}
+
+.company-logo {
+  float: right;
+  width: 100px;
+  border-radius: 25%;
+  padding: 0px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #ececec;
 }
 
 /* navigation bar */
@@ -213,14 +220,6 @@ a:hover, a:active {
   display: inline-block;
   color: white;
   margin-top: -15px;
-}
-
-#home-icon {
-  width: 60px;
-  position: relative;
-  top: 25px;
-  display: inline-block;
-  text-align: left;
 }
 
 .endbar {
