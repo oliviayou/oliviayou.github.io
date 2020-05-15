@@ -74,7 +74,7 @@ i {
   font-size: 32px;
   color: #7f75a6;
 }
-i :hover, i :active {
+i:hover, i:active {
   color: #554C78;
 }
 
@@ -86,6 +86,9 @@ i :hover, i :active {
   width: 60px;
   top: 25px;
 }
+#home-icon:hover, #home-icon:active {
+  background-color: #C9C2E3;
+}
 
 a:link, a:visited {
   color: black;
@@ -93,9 +96,7 @@ a:link, a:visited {
   text-decoration: none;
   display: inline-block;
 }
-
-a:hover, a:active,
-#home-icon:hover, #home-icon:active {
+a:hover, a:active {
   background-color: #C9C2E3;
 }
 
@@ -121,6 +122,11 @@ a:hover, a:active,
   display: inline-block;
   color: white;
   margin-top: -15px;
+}
+
+:target {
+  padding-top: 80px;
+  margin-top: -80px;
 }
 
 /* photos */
