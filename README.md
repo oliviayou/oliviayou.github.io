@@ -9,4 +9,3 @@ Just a simple personal website I built from scratch while learning HTML and CSS/
 ## Find The Project Here
 
 [oliviayou.github.io](https://oliviayou.github.io/)
-
