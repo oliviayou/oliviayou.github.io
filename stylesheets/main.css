@@ -80,7 +80,14 @@ i:hover, i:active {
   color: #554C78;
 }
 
-/* buttons */
+/* links */
+a {
+  text-decoration: none;
+}
+a:hover :not(#home-icon), a:active :not(#home-icon) {
+  background-color: #C9C2E3;
+}
+
 #home-icon {
   position: relative;
   display: inline-block;
@@ -88,21 +95,7 @@ i:hover, i:active {
   width: 60px;
   top: 25px;
 }
-#home-icon:hover, #home-icon:active {
-  background-color: #C9C2E3;
-}
 
-a:link, a:visited {
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-a:hover, a:active {
-  background-color: #C9C2E3;
-}
-
-/* navigation bar */
 .nav-bar {
   position: fixed;
   z-index: 1;

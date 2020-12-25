@@ -93,7 +93,14 @@ i {
     }
 }
   
-/* buttons */  
+/* links */  
+
+a {
+    text-decoration: none;
+    &:hover :not(#home-icon), &:active :not(#home-icon){
+        background-color: $emphasize-color;
+    }
+}
   
 #home-icon {
     position: relative;
@@ -101,27 +108,8 @@ i {
     text-align: left;
     width: 60px;
     top: 25px;
-
-    &:hover, &:active {
-        background-color: $emphasize-color;
-    }
 }
 
-a {
-    &:link, &:visited {
-        color: black;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-    }
-
-    &:hover, &:active {
-        background-color: $emphasize-color;
-    }
-}
-  
-/* navigation bar */
-  
 .nav-bar {
     position: fixed;
     z-index: 1;
@@ -147,8 +135,7 @@ a {
     }
 }
 
-// height of nav-bar to prevent text cut off
-// when jumping to section
+// height of nav-bar to prevent text cut off when skipping to section
 :target{
     padding-top: 80px;
     margin-top: -80px;
