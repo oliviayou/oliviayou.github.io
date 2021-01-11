@@ -112,11 +112,15 @@ a:hover :not(#home-icon), a:active :not(#home-icon) {
 }
 .nav-bar li {
   display: inline;
+  padding-left: 20px;
 }
 .nav-bar a {
   display: inline-block;
   color: white;
   margin-top: -15px;
+}
+.nav-bar a:hover, .nav-bar a:active {
+  text-decoration: underline;
 }
 
 :target {

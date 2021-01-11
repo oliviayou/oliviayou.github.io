@@ -97,6 +97,7 @@ i {
 
 a {
     text-decoration: none;
+    
     &:hover :not(#home-icon), &:active :not(#home-icon){
         background-color: $emphasize-color;
     }
@@ -126,12 +127,16 @@ a {
 
     li {
         display: inline;
+        padding-left: 20px;
     }
 
     a {
         display: inline-block;
         color: white;
         margin-top: -15px;
+        &:hover, &:active {
+            text-decoration: underline;
+        }
     }
 }
 
