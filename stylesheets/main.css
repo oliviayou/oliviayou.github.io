@@ -128,6 +128,10 @@ a:hover :not(#home-icon), a:active :not(#home-icon) {
   margin-top: -80px;
 }
 
+.activities {
+  margin: 10px 0;
+}
+
 /* photos */
 .row {
   display: flex;

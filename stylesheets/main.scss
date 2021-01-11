@@ -141,9 +141,13 @@ a {
 }
 
 // height of nav-bar to prevent text cut off when skipping to section
-:target{
+:target {
     padding-top: 80px;
     margin-top: -80px;
+}
+
+.activities {
+    margin: 10px 0;
 }
   
 /* photos */
